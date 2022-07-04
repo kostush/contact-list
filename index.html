@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class='modal'>
+        <form сclass="example-shadow-3">
+            <input type="text" placeholder=" Name" name="name" id="name" value="" >
+            <input type="text" placeholder=" Phone" name="phone" id="phone" value="">
+            <input type="email" placeholder=" Email" name="email" id="email" value="">
+            <button class= 'b2' id='saveButton' type="button" onclick="saveHandler()">Save</button>
+            <button class= 'b2' id='editButton' hidden="true" type="button" onclick="updateHandler(this)">Update</button>
+        </form>
+    </div>
+    <div class="table">
+        <table id="userTable">
+            <thead id='userListHeader'></thead>
+             <tbody id="userListBody"></tbody>
+        </table>
+    </div>
+
+
+    <script src="table.js"></script>
+    <script src="userList.js"></script>
+    <script  src = 'index.js'>  </script>  
+   
+     
+</body>
+</html>
